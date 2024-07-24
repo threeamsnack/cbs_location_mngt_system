@@ -1,0 +1,41 @@
+[{
+        "Society_Name": "Yuva",
+        "Date": "2024-07-21",
+        "Location": "Akashganga Auditorium",
+        "From": "12:00",
+        "To": "14:00",
+        "Status": "In Progress"
+    },
+    {
+        "Society_Name": "Nucleus",
+        "Date": "2024-07-21",
+        "Location": "Seminar Room 3rd Floor",
+        "From": "15:00",
+        "To": "17:00",
+        "Status": "In Progress"
+    },
+    {
+        "Society_Name": "Ecovision",
+        "Date": "2024-07-02",
+        "Location": "Seminar Room 5th Floor",
+        "From": "09:00",
+        "To": "11:00",
+        "Status": "Approved"
+    },
+    {
+        "Society_Name": "Ecoclub",
+        "Date": "2024-08-10",
+        "Location": "Classroom 405",
+        "From": "09:00",
+        "To": "11:00",
+        "Status": "Rejected"
+    },
+    {
+        "Society_Name": "Kronos",
+        "Date": "2024-07-06",
+        "Location": "Akashganga Auditorium",
+        "From": "09:00",
+        "To": "11:00",
+        "Status": "Approved"
+    }
+]

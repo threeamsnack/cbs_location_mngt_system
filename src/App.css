@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+:root {
+  --cont-color: "#dcdcdc";
+  --background-light: "#ececec";
+}
+
+body {
+  background-color: #ececec;
+}
+
 .App {
   text-align: center;
 }
@@ -38,17 +53,18 @@
 }
 
 .react-calendar {
-  width: 350px;
-  aspect-ratio: 1 / 1;
+  width: 26.7vw;
+  min-width: 342px;
   max-width: 100%;
-  background: #ffffff;
+  background: #dcdcdc;
   border: 1px solid #e0e0e0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6em;
   border-radius: 9px;
   padding: 6px 11px 11px 11px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4vh;
 }
 
 .react-calendar--doubleView {
@@ -166,13 +182,13 @@
 
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
-  background-color: #e6e6e6;
+  background-color: #c6c6c6;
   border-radius: 7px;
   color: #000;
 }
 
 .react-calendar__tile--now {
-  background: #ffff76;
+  background: #ffffff;
 }
 
 .react-calendar__tile--now:enabled:hover,
@@ -181,7 +197,9 @@
 }
 
 .react-calendar__tile--hasActive {
-  background: #76baff;
+  background: #000000;
+  color: #fff;
+  border-radius: 7px;
 }
 
 .react-calendar__tile--hasActive:enabaled:hover,
@@ -237,8 +255,8 @@ abbr[title] {
 }
 
 .today {
-  background-color: #000;
-  color: white;
+  background-color: #f1f1f1;
+  color: black;
   border-radius: 7px;
 }
 
@@ -277,4 +295,313 @@ abbr[title] {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.college-logo {
+  width: 100px;
+  height: 100px;
+  margin: 4px 0px 3px 14px;
+}
+
+.nav-bar {
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  z-index: 2;
+}
+
+.title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #774545;
+  font-size: 25px;
+  margin-right: auto;
+  font-family: "Poppins";
+  align-self: center;
+  text-align: center;
+  margin-left: 36px;
+  text-wrap: nowrap;
+}
+
+.user-img {
+  width: 30px;
+  height: max-content;
+  border-radius: 10px;
+  align-self: center;
+  border: 2px solid #ffffff;
+  margin-right: 12px;
+  margin-left: 3rem;
+}
+
+.user-name {
+  color: #5a5959;
+  align-self: center;
+  font-size: 13px;
+  margin-right: 30px;
+  font-family: "Poppins";
+}
+
+.user-cont {
+}
+
+.nav-cont {
+  flex: 1 1 0%;
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  gap: 2rem;
+  margin-top: 9rem;
+}
+
+.nav-opt {
+  background-color: #dcdcdc;
+  width: max-content;
+  padding: 0.6rem 1.6rem;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid #cdcdcd;
+  font-family: "Poppins";
+}
+
+.nav-opt-active {
+  background-color: #dcdcdc;
+  width: max-content;
+  padding: 0.6rem 1.6rem;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid #9c9393;
+  font-family: "Poppins";
+}
+
+.request-card {
+  background-color: #dcdcdc;
+  width: 62vw;
+  min-width: 565px;
+  height: 10rem;
+  margin-left: 3rem;
+  border-radius: 7px;
+  margin-top: 3rem;
+  border-left: 6px solid #10984b;
+}
+
+.request-parent {
+  display: flex;
+  align-items: center;
+  max-height: -webkit-fill-available;
+}
+
+table {
+  margin: 42px;
+  padding-top: 0px;
+  font-family: "Poppins";
+  font-size: 13px;
+  width: 21rem;
+}
+
+.status-approved,
+.status-inprog,
+.status-declined {
+  margin: 22px 23px auto auto;
+  color: "white";
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 13px;
+}
+
+.status-approved {
+  background-color: #299145;
+}
+
+.status-inprog {
+  background-color: #baac2c;
+}
+
+.status-declined {
+  background-color: #c44f4f;
+}
+
+td {
+  color: #4e4e4e;
+  position: relative;
+}
+
+td.field-title {
+  color: #000 !important;
+  width: 155px !important;
+}
+
+.section-parent {
+  display: flex;
+}
+
+.section-left {
+  margin-right: 2rem;
+}
+
+.section-right {
+  width: 26.7vw;
+  min-width: 342px;
+  height: 79vh;
+  margin-left: auto;
+  margin-right: 3rem;
+  margin-top: 8rem;
+  border-radius: 11px;
+  z-index: 1;
+}
+
+.info-cont {
+  width: 26.7vw;
+  min-width: 342px;
+  height: 55vh;
+  border-radius: 11px;
+  background-color: #dcdcdc;
+  height: max-content;
+}
+
+h5 {
+  margin-left: 2rem;
+  background-color: #bebebe;
+  width: max-content;
+  padding: 5.5px 22px;
+  border-radius: 9px;
+  font-weight: 400;
+  color: #545353;
+  text-wrap: nowrap;
+}
+
+h4 {
+  margin-left: 34px;
+  font-weight: 300;
+  padding-top: 24px;
+}
+
+.i-btn {
+  width: 14px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 21%;
+}
+
+@media (max-width: 765px) {
+  .request-card {
+    background-color: #dcdcdc;
+    width: 326px;
+    min-width: 0;
+    height: 17rem;
+    border-radius: 7px;
+    margin-top: 3rem;
+    border-left: 6px solid #10984b;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .request-parent {
+    display: flex;
+    align-items: center;
+    max-height: -webkit-fill-available;
+    flex-direction: column-reverse;
+  }
+
+  .section-left {
+    margin-right: 0;
+  }
+
+  .section-parent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav-bar {
+    display: flex;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .college-logo {
+    width: 66px;
+    height: 66px;
+    aspect-ratio: 1 / 1 !important;
+    margin: 4px 0px 3px 8px;
+    align-self: center;
+  }
+
+  .title {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #774545;
+    font-size: 14px;
+    margin-right: auto;
+    font-family: "Poppins";
+    align-self: center;
+    text-align: left;
+    margin-left: 9px;
+    text-wrap: wrap;
+    line-height: 20px;
+  }
+
+  .user-img {
+    width: 28px;
+    height: max-content;
+    border-radius: 10px;
+    align-self: center;
+    border: 2px solid #ffffff;
+    margin-right: 18px;
+    margin-left: 7rem;
+  }
+
+  .user-name {
+    color: #5a5959;
+    align-self: center;
+    font-size: 13px;
+    margin-right: 30px;
+    font-family: "Poppins";
+  }
+
+  .nav-cont {
+    flex: 1 1;
+    display: flex;
+    margin-left: 2.5rem;
+    gap: 1rem;
+    margin-top: 8rem;
+  }
+  .nav-opt,
+  .nav-opt-active {
+    font-size: 12px;
+    padding: 5px 13px;
+  }
+
+  table {
+    margin: 0;
+    padding-top: 0px;
+    font-family: "Poppins";
+    font-size: 13px;
+    width: 21rem;
+    margin-left: 40px;
+    margin-top: 26px;
+    line-height: 26px;
+  }
+
+  td.field-title {
+    vertical-align: text-top;
+  }
+
+  .section-right {
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+  }
+
+  .i-btn {
+    width: 14px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 21%;
+  }
 }

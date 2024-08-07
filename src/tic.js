@@ -71,7 +71,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td>i</td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -83,7 +83,7 @@ export default function App() {
       </div>
     </div>
 
-    <div className='request-card' style={{borderLeftColor: '#baac2c'}}>
+    <div className='request-card'>
       <div className='request-parent'>
       <div>
       <table className='field-cont'>
@@ -101,7 +101,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td>i</td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -113,7 +113,7 @@ export default function App() {
       </div>
     </div>
 
-    <div className='request-card' style={{borderLeftColor: '#c44f4e'}}>
+    <div className='request-card'>
       <div className='request-parent'>
       <div className='field-cont'>
       <table>
@@ -131,7 +131,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td>i</td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -161,7 +161,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td>i</td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -191,7 +191,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td>i</td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -210,12 +210,12 @@ export default function App() {
    <div className='section-right'>
 
     <div className='info-cont'>
-      <h4>Teacher In-Charge</h4>
+      <h4>Societies In-Charge</h4>
       <div style={{paddingBottom: '8px'}}>
-      <h5>Ms. Kavita Rastogi</h5>
-      <h5>Dr. Narender Kumar Nigam</h5>
-      <h5>Dr. Shikha Gupta</h5>
-      <h5>Ms. Anamika Gupta</h5>
+      <h5>YUVA</h5>
+      <h5>ECOCLUB</h5>
+      <h5>IFSA</h5>
+      <h5>NUCLEUS</h5>
       </div>
     </div>
     
@@ -245,8 +245,6 @@ export default function App() {
       )}
    </div>
    </div>
-
-
     </>
   );
 }

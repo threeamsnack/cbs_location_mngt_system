@@ -325,14 +325,46 @@ abbr[title] {
   text-wrap: nowrap;
 }
 
+.user-img-container {
+  position: relative;
+  cursor: pointer;
+}
+
 .user-img {
-  width: 30px;
+  width: 40px;
   height: max-content;
-  border-radius: 10px;
-  align-self: center;
   border: 2px solid #ffffff;
-  margin-right: 12px;
-  margin-left: 3rem;
+  margin-right: 20px;
+  margin-left: 5rem;
+  margin-top: 30px;
+  border-radius: 18px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
 }
 
 .user-name {

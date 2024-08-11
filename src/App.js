@@ -39,7 +39,7 @@ export default function App() {
    <div className='nav-bar'>
     <img src='/logo-transparent.png' className='college-logo' alt='sscbs-logo'></img>
     <h1 className='title'>College Location Management System</h1>
-    <img className='user-img' src='/yuva.png'></img>
+    <img className='user-img' src='/yuva.png' alt=''></img>
    </div>
 
  
@@ -71,7 +71,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -101,7 +101,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -131,7 +131,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -161,7 +161,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -191,7 +191,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>

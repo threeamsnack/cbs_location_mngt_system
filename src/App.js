@@ -5,6 +5,7 @@ import moment from 'moment';
 import './App.css';
 
 export default function App() {
+  const [menuVisible, setMenuVisible] = useState(false);
   const [dateState, setDateState] = useState(new Date());
   const [bookings, setBookings] = useState([]);
   const [selectedBookings, setSelectedBookings] = useState([]);
@@ -12,6 +13,23 @@ export default function App() {
     fetch('/data.json')
       .then(response => response.json())
       .then(data => setBookings(data));
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuVisible((prev) => !prev);
+  };
+
+  const handleOutsideClick = (e) => {
+    if (!e.target.closest('.user-img-container')) {
+      setMenuVisible(false);
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
   }, []);
 
   const changeDate = (date) => {
@@ -36,10 +54,21 @@ export default function App() {
   };
   return (
     <>
-   <div className='nav-bar'>
+  <div className='nav-bar'>
     <img src='/logo-transparent.png' className='college-logo' alt='sscbs-logo'></img>
     <h1 className='title'>College Location Management System</h1>
-    <img className='user-img' src='/yuva.png'></img>
+    <div className="user-img-container" onClick={toggleMenu}>
+      <img className='user-img' src='/yuva.png' alt='User'/>
+      {menuVisible && (
+            <div className="dropdown-menu">
+              <ul>
+                <li>About</li>
+                <li>Settings</li>
+                <li>Logout</li>
+              </ul>
+            </div>
+          )}
+    </div>
    </div>
 
  
@@ -71,7 +100,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -101,7 +130,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -131,7 +160,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -161,7 +190,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>
@@ -191,7 +220,7 @@ export default function App() {
        </tr>
        <tr>
         <td className='field-title'>PURPOSE</td>
-        <td><img src='/ibtn.png' className='i-btn'></img></td>
+        <td><img src='/ibtn.png' className='i-btn' alt=''></img></td>
        </tr>
        <tr>
         <td className='field-title'>TIC Approver</td>

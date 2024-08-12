@@ -39,7 +39,7 @@ export default function App() {
    <div className='nav-bar'>
     <img src='/logo-transparent.png' className='college-logo' alt='sscbs-logo'></img>
     <h1 className='title'>College Location Management System</h1>
-    <img className='user-img' src='/yuva.png'></img>
+    <img className='user-img' src='/yuva.png' alt=''></img>
    </div>
 
  

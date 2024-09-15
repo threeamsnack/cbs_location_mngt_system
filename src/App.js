@@ -5,6 +5,7 @@ import moment from "moment";
 import "./App.css";
 import RequestCard from "./components/RequestCard";
 import TicCard from "./components/TicCard";
+import SocCard from "./components/SocCard";
 import BookingCalendar from "./components/Calendar";
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
 
         <div className="section-right">
           <TicCard />
+          <SocCard />
           <BookingCalendar />
         </div>
       </div>
